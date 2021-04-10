@@ -15,3 +15,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listRef = document.querySelector('#gallery');
+console.log(listRef)
+
+listRef.insertAdjacentHTML('beforeend',
+    images.reduce((acc, image) => acc + `<li><img style="height: 320px;" src="${image.url}" alt="${image.alt}"></li>`, '')
+);
+
+
+
+
