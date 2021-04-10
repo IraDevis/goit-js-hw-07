@@ -1,4 +1,4 @@
-const listRef = document.querySelectorAll('.item');
+const listRef = document.querySelectorAll('.js-item');
 console.log(`В списке ${listRef.length} категории`);
 
 listRef.forEach(item => {
